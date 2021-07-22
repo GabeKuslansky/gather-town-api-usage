@@ -1,47 +1,65 @@
 import dotenv from 'dotenv';
 import got from 'got';
 import fs from 'fs';
+import { GuestList } from './types';
 
 dotenv.config();
 
 export class GatherTownService {
   private readonly API_KEY = process.env.GATHER_API_KEY;
   private readonly gatherURL = 'https://gather.town/api';
-  private readonly spaceId = `kK2wRQcsvApyKu1H\\API%20Test`;
-  private readonly mapId = `empty-room-small-brick`;
 
-  async readMap() {
+  async getMap(spaceId: string, mapId: string) {
     const response = await got.get(
-      `${this.gatherURL}/getMap?apiKey=${this.API_KEY}&spaceId=${this.spaceId}&mapId=empty-room-small-brick`
+      `${this.gatherURL}/getMap?apiKey=${this.API_KEY}&spaceId=${spaceId}&mapId=${mapId}`
     );
     return response.body;
   }
 
-  async setMap() {
-    const mapContent = JSON.parse(
-      fs.readFileSync('./map-data/map.json').toString()
+  async getEmailGuestlist(spaceId: string) {
+    const { body } = await got.get(
+      `${this.gatherURL}/getEmailGuestlist?apiKey=${this.API_KEY}&spaceId=${spaceId}`
     );
-    console.log(mapContent.spawns)
-    const response = await got.post(`${this.gatherURL}/setMap`, {
-      json: {
-        apiKey: this.API_KEY,
-        spaceId: this.spaceId,
-        mapId: this.mapId,
-        mapContent,
-      },
-    });
-    return response;
+
+    return body;
   }
 
-  async createMap() {
+  async setEmailGuestlist(spaceId: string, guestList: GuestList) {
+    const { body } = await got.post(`${this.gatherURL}/setEmailGuestlist`, {
+      json: {
+        apiKey: this.API_KEY,
+        spaceId: spaceId,
+        guestlist: guestList,
+        overwrite: true,
+      },
+    });
+
+    return body;
+  }
+
+  async setMap(spaceId: string, mapId: string, mapContent: any) {
+    try {
+      await got.post(`${this.gatherURL}/setMap`, {
+        json: {
+          apiKey: this.API_KEY,
+          spaceId: spaceId,
+          mapId: mapId,
+          mapContent,
+        },
+      });
+    } catch (e) {
+      console.error(e.message);
+    }
+  }
+
+  async createRoom(spaceId: string, name: string) {
     const url = `${this.gatherURL}/createRoom`;
     console.log(url);
     try {
-      const response = await got.post(url, {
-        json: { name: 'test', apiKey: this.API_KEY, sourceSpace: this.spaceId },
+      const { body } = await got.post(url, {
+        json: { name, apiKey: this.API_KEY, sourceSpace: spaceId },
       });
-      console.log(response);
-      return response;
+      return body;
     } catch (e) {
       console.log(e.message);
     }
