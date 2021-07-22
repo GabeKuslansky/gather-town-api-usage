@@ -1,0 +1,260 @@
+{
+    "spawns": [
+       {
+          "x": 12,
+          "y": 6
+       },
+       {
+          "x": 11,
+          "y": 7
+       },
+       {
+          "x": 12,
+          "y": 7
+       },
+       {
+          "y": 7,
+          "x": 13
+       },
+       {
+          "x": 11,
+          "y": 8
+       },
+       {
+          "x": 12,
+          "y": 8
+       },
+       {
+          "x": 12,
+          "y": 9
+       },
+       {
+          "x": 13,
+          "y": 8
+       },
+       {
+          "x": 13,
+          "y": 6
+       },
+       {
+          "y": 9,
+          "x": 13
+       },
+       {
+          "y": 8,
+          "x": 14
+       },
+       {
+          "x": 14,
+          "y": 7
+       }
+    ],
+    "useDrawnBG": true,
+    "id": "empty-room-small-brick",
+    "backgroundImagePath": "https://cdn.gather.town/storage.googleapis.com/gather-town.appspot.com/uploads/4wT9rX8xtHlVR7v9/cgBwAsRSQlN6daTQGiBXUf",
+    "walls": {
+       "6": "AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="
+    },
+    "collisions": "AAAAAAAAAAAAAAABAAABAAAAAAAAAAAAAAEBAQEBAQEBAQEBAQAAAQEBAQEBAQEBAQEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQEBAQEBAQEBAQEAAAEBAQEBAQEBAQEBAQEBAAAAAAAAAAABAAABAAAAAAAAAAAAAA==",
+    "spaces": [],
+    "portals": [],
+    "floors": {
+       "5": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQ=="
+    },
+    "objects": [
+       {
+          "scale": 1,
+          "x": 11,
+          "_name": "Doorway (2-wide)",
+          "y": 0,
+          "offsetY": 0,
+          "type": 0,
+          "offsetX": 0,
+          "height": 2,
+          "normal": "https://cdn.gather.town/v0/b/gather-town.appspot.com/o/internal-dashboard-upload%2F0UTlOCf0qbznQEZb?alt=media&token=b6a624e2-9c77-4e75-984d-351ee34312cb",
+          "properties": {},
+          "highlighted": "https://cdn.gather.town/v0/b/gather-town.appspot.com/o/internal-dashboard-upload%2FLVBK9spmrMPAvZUC?alt=media&token=b1891494-bd38-4952-844f-68d95c31b47c",
+          "width": 4
+       },
+       {
+          "height": 3,
+          "y": 14,
+          "properties": {},
+          "_name": "Doorway (2-wide)",
+          "normal": "https://cdn.gather.town/v0/b/gather-town.appspot.com/o/internal-dashboard-upload%2F0UTlOCf0qbznQEZb?alt=media&token=b6a624e2-9c77-4e75-984d-351ee34312cb",
+          "highlighted": "https://cdn.gather.town/v0/b/gather-town.appspot.com/o/internal-dashboard-upload%2FLVBK9spmrMPAvZUC?alt=media&token=b1891494-bd38-4952-844f-68d95c31b47c",
+          "scale": 1,
+          "offsetY": 0,
+          "type": 0,
+          "width": 4,
+          "offsetX": 0,
+          "x": 11
+       },
+       {
+          "width": 1,
+          "y": 5,
+          "normal": "https://cdn.gather.town/v0/b/gather-town.appspot.com/o/internal-dashboard-upload%2FGb1j09WoypxoA4UP?alt=media&token=107ec86e-6d96-41cb-98c2-721fbde0fbd3",
+          "orientation": 0,
+          "color": "#df7126",
+          "height": 2,
+          "id": "Potted Plant (Spikey) - Txt3yDFD8NtkI-JZbdWM_a01f5019-8249-4079-9db6-08f4ae42a382",
+          "templateId": "Potted Plant (Spikey) - Txt3yDFD8NtkI-J_ZbdWM",
+          "highlighted": "https://cdn.gather.town/v0/b/gather-town.appspot.com/o/internal-dashboard-upload%2FfGsyMUMk4B8fyMhc?alt=media&token=48527786-a612-45cf-a97c-7f6332204680",
+          "_name": "Potted Plant (Spikey)",
+          "x": 4,
+          "scale": 1,
+          "properties": {},
+          "type": 0
+       },
+       {
+          "templateId": "Fish Bowl - G8oPC_YTuOhP16KdfjYPb",
+          "type": 1,
+          "height": 1,
+          "distThreshold": 1,
+          "_name": "Fish Bowl",
+          "properties": {
+             "url": "https://fishbowl-game.com"
+          },
+          "color": "a",
+          "_tags": [
+             "social",
+             "game"
+          ],
+          "scale": 1,
+          "highlighted": "https://cdn.gather.town/v0/b/gather-town.appspot.com/o/internal-dashboard-upload%2Ftm0NQwhjRZ3U9AfX?alt=media&token=cad6709c-580d-4d55-ba8d-018bcd5e6758",
+          "previewMessage": "Press x to play Fish Bowl",
+          "y": 8,
+          "width": 1,
+          "normal": "https://cdn.gather.town/v0/b/gather-town.appspot.com/o/internal-dashboard-upload%2Fp1KE9MZJHHS2IAFm?alt=media&token=8d147951-f901-4f42-b3ad-51652c56ee58",
+          "id": "Fish Bowl - G8oPCYTuOhP16KdfjYPb_6c655eea-e763-4c1a-b2f4-4608926d2950",
+          "orientation": 0,
+          "x": 14
+       },
+       {
+          "color": "a",
+          "orientation": 0,
+          "previewMessage": "Press x to play Fish Bowl",
+          "height": 1,
+          "properties": {
+             "url": "https://fishbowl-game.com"
+          },
+          "width": 1,
+          "templateId": "Fish Bowl - G8oPC_YTuOhP16KdfjYPb",
+          "x": 14,
+          "normal": "https://cdn.gather.town/v0/b/gather-town.appspot.com/o/internal-dashboard-upload%2Fp1KE9MZJHHS2IAFm?alt=media&token=8d147951-f901-4f42-b3ad-51652c56ee58",
+          "id": "Fish Bowl - G8oPCYTuOhP16KdfjYPb_f787031a-5db5-4622-9ebb-f95865abdff1",
+          "_name": "Fish Bowl",
+          "scale": 1,
+          "highlighted": "https://cdn.gather.town/v0/b/gather-town.appspot.com/o/internal-dashboard-upload%2Ftm0NQwhjRZ3U9AfX?alt=media&token=cad6709c-580d-4d55-ba8d-018bcd5e6758",
+          "_tags": [
+             "social",
+             "game"
+          ],
+          "type": 1,
+          "distThreshold": 1,
+          "y": 9
+       },
+       {
+          "properties": {
+             "url": "https://fishbowl-game.com"
+          },
+          "id": "Fish Bowl - G8oPCYTuOhP16KdfjYPb_51b8a1da-aff1-4392-9612-fa625397323b",
+          "highlighted": "https://cdn.gather.town/v0/b/gather-town.appspot.com/o/internal-dashboard-upload%2Ftm0NQwhjRZ3U9AfX?alt=media&token=cad6709c-580d-4d55-ba8d-018bcd5e6758",
+          "x": 8,
+          "width": 1,
+          "templateId": "Fish Bowl - G8oPC_YTuOhP16KdfjYPb",
+          "_name": "Fish Bowl",
+          "scale": 1,
+          "orientation": 0,
+          "distThreshold": 1,
+          "_tags": [
+             "social",
+             "game"
+          ],
+          "normal": "https://cdn.gather.town/v0/b/gather-town.appspot.com/o/internal-dashboard-upload%2Fp1KE9MZJHHS2IAFm?alt=media&token=8d147951-f901-4f42-b3ad-51652c56ee58",
+          "color": "a",
+          "previewMessage": "Press x to play Fish Bowl",
+          "height": 1,
+          "y": 4,
+          "type": 1
+       },
+       {
+          "_tags": [
+             "social",
+             "game"
+          ],
+          "normal": "https://cdn.gather.town/v0/b/gather-town.appspot.com/o/internal-dashboard-upload%2Fp1KE9MZJHHS2IAFm?alt=media&token=8d147951-f901-4f42-b3ad-51652c56ee58",
+          "previewMessage": "Press x to play Fish Bowl",
+          "scale": 1,
+          "properties": {
+             "url": "https://fishbowl-game.com"
+          },
+          "orientation": 0,
+          "width": 1,
+          "y": 7,
+          "x": 14,
+          "_name": "Fish Bowl",
+          "height": 1,
+          "templateId": "Fish Bowl - G8oPC_YTuOhP16KdfjYPb",
+          "distThreshold": 1,
+          "color": "a",
+          "id": "Fish Bowl - G8oPCYTuOhP16KdfjYPb_c76f6107-b800-4e10-bfdc-bb2fbfd836be",
+          "highlighted": "https://cdn.gather.town/v0/b/gather-town.appspot.com/o/internal-dashboard-upload%2Ftm0NQwhjRZ3U9AfX?alt=media&token=cad6709c-580d-4d55-ba8d-018bcd5e6758",
+          "type": 1
+       },
+       {
+          "properties": {
+             "url": "https://fishbowl-game.com"
+          },
+          "id": "Fish Bowl - G8oPCYTuOhP16KdfjYPb_15a9ae91-565c-4c08-ba3e-55721d79c523",
+          "scale": 1,
+          "distThreshold": 1,
+          "normal": "https://cdn.gather.town/v0/b/gather-town.appspot.com/o/internal-dashboard-upload%2Fp1KE9MZJHHS2IAFm?alt=media&token=8d147951-f901-4f42-b3ad-51652c56ee58",
+          "type": 1,
+          "highlighted": "https://cdn.gather.town/v0/b/gather-town.appspot.com/o/internal-dashboard-upload%2Ftm0NQwhjRZ3U9AfX?alt=media&token=cad6709c-580d-4d55-ba8d-018bcd5e6758",
+          "previewMessage": "Press x to play Fish Bowl",
+          "color": "a",
+          "height": 1,
+          "x": 12,
+          "_name": "Fish Bowl",
+          "orientation": 0,
+          "templateId": "Fish Bowl - G8oPC_YTuOhP16KdfjYPb",
+          "_tags": [
+             "social",
+             "game"
+          ],
+          "y": 9,
+          "width": 1
+       },
+       {
+          "width": 1,
+          "normal": "https://cdn.gather.town/v0/b/gather-town.appspot.com/o/internal-dashboard-upload%2Fp1KE9MZJHHS2IAFm?alt=media&token=8d147951-f901-4f42-b3ad-51652c56ee58",
+          "highlighted": "https://cdn.gather.town/v0/b/gather-town.appspot.com/o/internal-dashboard-upload%2Ftm0NQwhjRZ3U9AfX?alt=media&token=cad6709c-580d-4d55-ba8d-018bcd5e6758",
+          "properties": {
+             "url": "https://fishbowl-game.com"
+          },
+          "distThreshold": 1,
+          "height": 1,
+          "x": 7,
+          "_tags": [
+             "social",
+             "game"
+          ],
+          "y": 5,
+          "type": 1,
+          "previewMessage": "Press x to play Fish Bowl",
+          "_name": "Fish Bowl",
+          "color": "a",
+          "templateId": "Fish Bowl - G8oPC_YTuOhP16KdfjYPb",
+          "id": "Fish Bowl - G8oPCYTuOhP16KdfjYPb_6befb261-014b-4188-a71c-eb62a0934ea2",
+          "scale": 1,
+          "orientation": 0
+       }
+    ],
+    "dimensions": [
+       25,
+       16
+    ],
+    "announcer": [],
+    "assets": []
+ }
