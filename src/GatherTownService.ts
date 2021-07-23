@@ -1,6 +1,5 @@
 import dotenv from 'dotenv';
 import got from 'got';
-import fs from 'fs';
 import { GuestList } from './types';
 
 dotenv.config();
@@ -10,10 +9,10 @@ export class GatherTownService {
   private readonly gatherURL = 'https://gather.town/api';
 
   async getMap(spaceId: string, mapId: string) {
-    const response = await got.get(
+    const { body } = await got.get(
       `${this.gatherURL}/getMap?apiKey=${this.API_KEY}&spaceId=${spaceId}&mapId=${mapId}`
     );
-    return response.body;
+    return JSON.parse(body);
   }
 
   async getEmailGuestlist(spaceId: string) {
@@ -32,6 +31,9 @@ export class GatherTownService {
         guestlist: guestList,
         overwrite: true,
       },
+      headers: {
+        'Content-Type': 'application/json',
+      },
     });
 
     return body;
@@ -40,11 +42,9 @@ export class GatherTownService {
   async setMap(spaceId: string, mapId: string, mapContent: any) {
     try {
       await got.post(`${this.gatherURL}/setMap`, {
-        json: {
-          apiKey: this.API_KEY,
-          spaceId: spaceId,
-          mapId: mapId,
-          mapContent,
+        json: { apiKey: this.API_KEY, spaceId, mapId, mapContent },
+        headers: {
+          'Content-Type': 'application/json',
         },
       });
     } catch (e) {
@@ -58,6 +58,9 @@ export class GatherTownService {
     try {
       const { body } = await got.post(url, {
         json: { name, apiKey: this.API_KEY, sourceSpace: spaceId },
+        headers: {
+          'Content-Type': 'application/json',
+        },
       });
       return body;
     } catch (e) {
