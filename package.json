@@ -12,7 +12,6 @@
   "author": "Gabe <kuslanskyg@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "@types/uuid": "^8.3.1",
     "dotenv": "^10.0.0",
     "got": "^11.8.2"
   },
